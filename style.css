@@ -100,31 +100,46 @@
 
 .products {
 	display: flex;
-	width: 100%;
 	flex-direction: column;
-	gap: 50px;
+	gap: 20px;
+	width: 100%;
 }
 
 .products>div {
-	width: 90%;
-	height: 300px;
+	width: 100%;
 	background: rgb(200, 200, 200);
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: left;
-	font-size: 100px;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	box-sizing: border-box;
+	padding: 20px;
+	transition: background 0.2s;
+}
+
+.products>div:hover {
+	background: rgb(230, 230, 230);
+}
+
+.products>div a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	text-decoration: none;
+	color: rgb(18, 18, 18);
+	width: 100%;
 }
 
 .products>div img {
-	width: 20%;
-	max-height: 200px;
+	width: 200px;
+	height: 160px;
 	object-fit: cover;
-	margin-bottom: 10px;
+	flex-shrink: 0;
 }
 
 .products>div p {
 	margin: 0;
-	text-align: center;
-	font-size: 18px;
+	font-size: 24px;
+	font-family: monospace;
 }
