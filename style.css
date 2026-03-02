@@ -1,13 +1,15 @@
-/* add your CSS here */
-
-/*  color pallete
-(18,18,18)
-(46,46,46)
-(22,83,126)
-(61,133,198)
-(69,157,224)
-(200,200,200)
-*/
+/* pico defaults overwrite */
+:root {
+	--pico-font-family: monospace;
+	--pico-background-color: rgb(46, 46, 46);
+	--pico-color: rgb(200, 200, 200);
+	--pico-primary: rgb(69, 157, 224);
+	--pico-primary-hover: rgb(61, 133, 198);
+	--pico-card-background-color: rgb(22, 83, 126);
+	--pico-card-border-color: transparent;
+	--pico-border-color: rgb(61, 133, 198);
+	--pico-muted-color: rgb(200, 200, 200);
+}
 
 .menu button {
 	border: none;
