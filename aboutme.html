@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me - Nothing shop</title>
 
-  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- color pallete
     (18,18,18)
@@ -18,85 +18,53 @@
   -->
 </head>
 
-<body style="
-font-family: monospace;
-background: rgb(46,46,46);
-">
+<body>
 
-  <div id="page title" style="
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        background-color: rgb(18,18,18);
-        ">
-    <h1 style="
-      font-size: 40px; 
-      color: rgb(200,200,200);
-    ">
-      The NOTHING shop
-    </h1>
-
-    <div id="menu div" class="menu" style="
-      display: grid; 
-      margin-left: auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      ">
-      <a href="index.html"><button>HOME</button></a>
-      <a href="catalog.html"><button>CATALOGUE</button></a>
-      <a href="conts.html"><button>CONTACTS</button></a>
-      <a href="aboutme.html"><button>ABOUT ME</button></a>
+  <header>
+    <div class="container">
+      <h1>The NOTHING shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="catalog.html">CATALOGUE</a></li>
+          <li><a href="aboutme.html">ABOUT ME</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div style="
-      padding: 50px;
-      margin: 50px;
-      padding-left: 200px;
-      padding-right: 200px;
-      background-color: rgb(22,83,126);
-      ">
-    <p style="text-align: center; font-size: 70px;">About Me</p>
-  </div>
+  <main class="container-fluid">
 
-  <div style="
-      margin: 50px;
-      padding: 50px;
-      background-color: rgb(61,133,198);
-      ">
-    <p style="font-size: 30px; margin-bottom: 30px;">Who am I?</p>
-    <p style="font-size: 20px; color: rgb(200,200,200); line-height: 1.8;">
-      Just your averege nothing seller.
+    <div class="banner" style="margin: 2rem;">
+      <h2>About Me</h2>
+    </div>
 
-    </p>
-  </div>
+    <div style="margin: 0 2rem 2rem; display: flex; flex-direction: column; gap: 16px;">
 
-  <div style="
-      margin: 50px;
-      padding: 50px;
-      background-color: rgb(61,133,198);
-      ">
-    <p style="font-size: 30px; margin-bottom: 30px;">My Mission</p>
-    <p style="font-size: 20px; color: rgb(200,200,200); line-height: 1.8;">
-      My lifelong mission is to sell nothing. I personally, really enjoy getting <br>
-      nothing, so I want to empart this very joy with as many people as possible,<br>
-      because everyone deserves nothing!
+      <div class="info-card">
+        <h3>Who am I?</h3>
+        <p>Just your average nothing seller.</p>
+      </div>
 
-    </p>
-  </div>
+      <div class="info-card">
+        <h3>My Mission</h3>
+        <p>My lifelong mission is to sell nothing. I personally really enjoy getting nothing,
+          so I want to impart this very joy with as many people as possible,
+          because everyone deserves nothing!</p>
+      </div>
 
-  <div style="
-      margin: 50px;
-      padding: 50px;
-      background-color: rgb(61,133,198);
-      ">
-    <p style="font-size: 30px; margin-bottom: 30px;">Fun Facts</p>
-    <p style="font-size: 20px; color: rgb(200,200,200); line-height: 1.8;">
-      - Nothing really matters. <br>
-      - You deserve nothing. <br>
-      - If things get too difficult, nothing is out there to help you <br>
+      <div class="info-card">
+        <h3>Fun Facts</h3>
+        <p>
+          — Nothing really matters.<br>
+          — You deserve nothing.<br>
+          — If things get too difficult, nothing is out there to help you.
+        </p>
+      </div>
 
-    </p>
-  </div>
+    </div>
+
+  </main>
 
 </body>
 
