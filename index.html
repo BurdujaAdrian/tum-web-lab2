@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nothing shop</title>
 
-  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- color pallete
     (18,18,18)
@@ -18,98 +18,62 @@
   -->
 </head>
 
-<body style="
-font-family: monospace;
-background: rgb(46,46,46);
-">
+<body>
 
-  <div id="page title" style="
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        background-color: rgb(18,18,18) ;
-        ">
-    <h1 style="
-      font-size: 40px; 
-      color: rgb(200,200,200);
-    ">
-      The NOTHING shop
-    </h1>
-
-    <div id="menu div" class="menu" style="
-      display: grid; 
-      margin-left: auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      ">
-      <a href="index.html"><button>HOME</button></a>
-      <a href="catalog.html"><button>CATALOGUE</button></a>
-      <a href="conts.html"><button>CONTACTS</button></a>
-      <a href="aboutme.html"><button>ABOUT ME</button></a>
+  <header>
+    <div class="container">
+      <h1>The NOTHING shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="catalog.html">CATALOGUE</a></li>
+          <li><a href="conts.html">CONTACTS</a></li>
+          <li><a href="aboutme.html">ABOUT ME</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div id="call to action" style="
-      padding: 50px;
-      /* margin-top: 50px; */
-      margin: 50px;
-      padding-left: 200px;
-      padding-right:200px;
-      background-color: rgb(22,83,126);
-      ">
-    <p style=" text-align: center; font-size: 70px;
-        ">You should buy nothing NOW !!</p>
-  </div>
+  <main class="container-fluid">
 
-  <div id="reccomended products" style="
-      padding: 50px;
-      /* margin-top: 50px; */
-      margin: 50px;
-      /* padding-left: 200px; */
-      /* padding-right:200px; */
-      background-color: rgb(61,133,198);
-  ">
-    <p style="
-        text-align: left;
-        font-size: 60px;
-        ">
-      Reccomended products:
-    </P>
-  </div>
+    <div class="banner" style="margin: 2rem;">
+      <h2>You should buy nothing NOW !!</h2>
+    </div>
 
+    <div class="section-label" style="margin: 0 2rem;">
+      <h3>Recommended products:</h3>
+    </div>
 
-  <div id="carrousel" style="
-      /* width: 300px; */
-      margin: 50px;
-      text-align: center;
-      overflow: hidden;
-  ">
-    <div class="slides">
-      <div id="slide-1">
-        <a href="products.html">
-          <img src="nothingbag.jpg" />
-          <p> A whole lotta nothing</p>
-        </a>
-      </div>
-      <div id="slide-2">
-        <a href="products.html">
-          <img src="nothingburger.jpg" />
-          <p> A nothing-burger </p>
-        </a>
-      </div>
-      <div id="slide-3">
-        <a href="products.html">
-          <img src="box.jpg" />
-          <p> empty box </p>
-        </a>
-      </div>
-      <div id="slide-4">
-        <a href="products.html">
-          <img src="pholo.jfif" />
-          <p> Philosofy lessons </p>
-        </a>
+    <div style="margin: 0 2rem 2rem; overflow: hidden;">
+      <div class="slides">
+        <div>
+          <a href="products.html">
+            <img src="nothingbag.jpg" />
+            <p>A whole lotta nothing</p>
+          </a>
+        </div>
+        <div>
+          <a href="products.html">
+            <img src="nothingburger.jpg" />
+            <p>A nothing-burger</p>
+          </a>
+        </div>
+        <div>
+          <a href="products.html">
+            <img src="box.jpg" />
+            <p>Empty box</p>
+          </a>
+        </div>
+        <div>
+          <a href="products.html">
+            <img src="pholo.jfif" />
+            <p>Philosofy lessons</p>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+
+  </main>
 
 
 </body>

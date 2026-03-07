@@ -11,26 +11,6 @@
 	--pico-muted-color: rgb(200, 200, 200);
 }
 
-.menu button {
-	border: none;
-	background-color: rgba(0, 0, 0, 0);
-	color: rgb(200, 200, 200);
-	font-size: 32px;
-	padding: 10px;
-}
-
-.menu button:hover {
-	/* border: none; */
-	background-color: rgb(22, 83, 126);
-	color: rgb(18, 18, 18);
-	font-size: 32px;
-	padding: 10px;
-}
-
-.menu a {
-	display: contents;
-}
-
 /* Slider stuff
 */
 
@@ -144,4 +124,71 @@
 	margin: 0;
 	font-size: 24px;
 	font-family: monospace;
+}
+
+/** pico stuff **/
+/* headers */
+header {
+	background-color: rgb(18, 18, 18);
+	padding: 1rem 2rem;
+}
+
+header .container {
+	display: flex;
+	align-items: center;
+	max-width: 100%;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2rem;
+	color: rgb(200, 200, 200);
+}
+
+header nav {
+	margin-left: auto;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+
+header nav a {
+	display: block;
+	padding: 0.5rem 1rem;
+	color: rgb(200, 200, 200);
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+header nav a:hover {
+	background-color: rgb(22, 83, 126);
+}
+
+/* banner */
+.banner {
+	background-color: rgb(22, 83, 126);
+	text-align: center;
+	padding: 3rem 2rem;
+}
+
+.banner h2 {
+	font-size: 3.5rem;
+	color: rgb(200, 200, 200);
+	margin: 0;
+}
+
+/* section */
+.section-label {
+	background-color: rgb(61, 133, 198);
+	padding: 1.5rem 2rem;
+}
+
+.section-label h3 {
+	font-size: 2.5rem;
+	color: rgb(18, 18, 18);
+	margin: 0;
 }
