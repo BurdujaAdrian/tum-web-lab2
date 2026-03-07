@@ -208,3 +208,45 @@ header nav a:hover {
 	line-height: 1.8;
 	margin: 0;
 }
+
+/* mascot */
+.mascot {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0;
+	animation: appear 0.5s ease forwards;
+	animation-delay: 2s;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+@keyframes appear {
+	to {
+		opacity: 1;
+	}
+}
+
+.tooltip {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	background-color: rgb(22, 83, 126);
+	color: rgb(200, 200, 200);
+	padding: 0.5rem 1rem;
+	font-family: monospace;
+	white-space: nowrap;
+}
+
+.mascot:hover .tooltip {
+	z-index: 9999;
+	display: block;
+}
+
+.mascot img {
+	width: 120px;
+	height: 160px;
+	image-rendering: pixelated;
+	background-color: rgb(69, 157, 224);
+}
