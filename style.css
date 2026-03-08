@@ -11,8 +11,8 @@
 	--pico-muted-color: rgb(200, 200, 200);
 }
 
-/* Slider stuff
-*/
+/* Slider stuff */
+
 
 .slides {
 	display: flex;
@@ -20,11 +20,6 @@
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
-
-	/*
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-    */
 }
 
 .slides::-webkit-scrollbar {
@@ -47,16 +42,13 @@
 	width: 300px;
 	height: 300px;
 	margin-right: 50px;
-	/* border-radius: 10px; */
 	background: rgb(200, 200, 200);
 	transform-origin: center center;
 	transform: scale(1);
 	transition: transform 0.5s;
 	position: relative;
-
 	display: flex;
 	flex-direction: column;
-	/* Stack image and text vertically */
 	justify-content: center;
 	align-items: center;
 	font-size: 100px;
@@ -71,7 +63,6 @@
 	max-height: 200px;
 	object-fit: cover;
 	margin-bottom: 10px;
-
 }
 
 .slides>div p {
@@ -175,7 +166,6 @@ header nav a:hover {
 	font-size: 3.5rem;
 	color: rgb(200, 200, 200);
 	margin: 0;
-
 }
 
 /* section */
@@ -237,10 +227,10 @@ header nav a:hover {
 	padding: 0.5rem 1rem;
 	font-family: monospace;
 	white-space: nowrap;
+	z-index: 9999;
 }
 
 .mascot:hover .tooltip {
-	z-index: 9999;
 	display: block;
 }
 
@@ -255,46 +245,122 @@ header nav a:hover {
 	display: none;
 }
 
-/* mobile only */
+/*  mobile */
 
 @media only screen and (hover: none) and (pointer: coarse) {
 	.mobile {
 		display: block;
 	}
 
-	.mascot img {
-		width: 90px;
-		height: 120px;
-		image-rendering: pixelated;
-		background-color: rgb(69, 157, 224);
+	/* header */
+	header {
+		padding: 0.75rem 1rem;
 	}
 
+	header .container {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	header h1 {
+		font-size: 1.2rem;
+	}
+
+	header nav {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	header nav ul {
+		flex-wrap: wrap;
+	}
+
+	header nav a {
+		font-size: 0.9rem;
+		padding: 0.4rem 0.6rem;
+	}
+
+	/* banner */
+	.banner {
+		padding: 1.5rem 1rem;
+		margin: 0.5rem !important;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.banner h2 {
+		font-size: 1.8rem;
+	}
+
+	/* section label */
+	.section-label {
+		padding: 1rem;
+		margin: 0 0.5rem !important;
+	}
+
+	.section-label h3 {
+		font-size: 1.5rem;
+	}
+
+	/* info cards */
+	.info-card {
+		padding: 1.5rem 1rem;
+	}
+
+	.info-card h3 {
+		font-size: 1.3rem;
+	}
+
+	.info-card p {
+		font-size: 1rem;
+	}
+
+	/* slides */
 	.slides {
 		flex-direction: column;
 		overflow-x: hidden;
 		overflow-y: auto;
 		scroll-snap-type: y mandatory;
 		max-height: 600px;
+		margin: 0.5rem !important;
 	}
 
 	.slides>div {
-		scroll-snap-align: start;
-		flex-shrink: 0;
 		width: 100%;
-		height: 300px;
-		padding: 20px;
-		margin: 20px;
+		height: 260px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
 
-		background: rgb(200, 200, 200);
-		transform-origin: center center;
-		transform: scale(1);
-		transition: transform 0.5s;
-		position: relative;
+	.slides>div p {
+		font-size: 16px;
+	}
 
-		display: flex;
+	/* products */
+	.products>div {
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		font-size: 100px;
+		align-items: flex-start;
+		gap: 16px;
+		padding: 16px;
+	}
+
+	.products>div img {
+		width: 100%;
+		height: 180px;
+	}
+
+	.products>div p {
+		font-size: 18px;
+	}
+
+	/* mascot */
+	.mascot img {
+		width: 90px;
+		height: 120px;
+	}
+
+	.tooltip {
+		display: block;
 	}
 }
