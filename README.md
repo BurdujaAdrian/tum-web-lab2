@@ -4,9 +4,12 @@ Nothing shop is a website that sells nothing. There's nothing better then nothin
 
 # Showcase
 
+![Mascot, " "](./stickman.gif)
+
 ![Landing page](./landing.PNG)
 ![Catalogue](./catalogue.PNG)
 ![About me](./about.PNG)
+![Mobile version](./mobile.PNG)
 
 # Demo
 
