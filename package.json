@@ -1,0 +1,24 @@
+{
+  "name": "tum-web-lab2",
+  "version": "1.0.0",
+  "description": "Nothing shop is a website that sells nothing. There's nothing better then nothing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurdujaAdrian/tum-web-lab2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BurdujaAdrian/tum-web-lab2/issues"
+  },
+  "homepage": "https://github.com/BurdujaAdrian/tum-web-lab2#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
