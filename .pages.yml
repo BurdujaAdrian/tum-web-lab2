@@ -6,8 +6,12 @@ content:
   - name: fun_facts
     label: Facts
     type: file
-    list: true
     path: _data/fun_facts.json
+    fields:
+      - name: text
+        label: Text
+        type: string
+        list: true
 
         
   - name: products
