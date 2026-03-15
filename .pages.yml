@@ -4,13 +4,12 @@ media:
 
 content:
   - name: fun_facts
-    label: facts
+    label: Facts
     type: file
-    path: _data/fun_facts.json
     list: true
-    fields:
-      - { name: text, label: Text, type: string }
+    path: _data/fun_facts.json
 
+        
   - name: products
     label: Products
     type: file
