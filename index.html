@@ -3,7 +3,7 @@ layout : layouts/base.njk
 ---
 <div class="banner" style="margin: 2rem;">
   <div class="mascot">
-    <img src="/img/stickman.gif" />
+  <img src=" {{'/img/stickman.gif' | url }}" />
     <div class="tooltip">Buy nothing today!</div>
   </div>
   <h2>You should buy nothing NOW !!</h2>
@@ -17,7 +17,7 @@ layout : layouts/base.njk
   <div class="slides">
     {% for product in products.products%}
     <div>
-      <img src="./img/{{product.src}}" />
+      <img src="{{product.src | url}}" />
       <p>{{product.text}}</p>
     </div>
     {% endfor%}

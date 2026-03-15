@@ -9,8 +9,8 @@ layout: layouts/base.njk
   <div class="products">
     {% for product in products.products%}
     <div>
-      <img src="./img/{{product.src}}" />
-      <p> {{product.text}}</p>
+    <img src="{{product.src | url}}" />
+    <p> {{product.text}}</p>
     </div>
     {% endfor%}
   </div>

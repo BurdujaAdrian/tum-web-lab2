@@ -1,15 +1,15 @@
 {
   "products": [
     {
-      "src": "nothingbag.jpg",
+      "src": "/img/nothingbag.jpg",
       "text": "A whole lotta nothing"
     },
     {
-      "src": "nothingburger.jpg",
+      "src": "/img/nothingburger.jpg",
       "text": "A nothing-burger"
     },
     {
-      "src": "box.jpg",
+      "src": "/img/box.jpg",
       "text": "Empty box"
     },
     {
