@@ -1,12 +1,17 @@
-collections:
+media:
+  input: public/img
+  output: /img
+
+content:
   - name: products
     label: Products
     type: file
     path: _data/products.json
     fields:
-      - name: src
-        label: Source
-        type: string
-      - name: text
-        label: Text
-        type: string
+      - name: products
+        label: Products
+        type: object
+        list: true
+        fields:
+          - { name: src, label: Source, type: image }
+          - { name: text, label: Text, type: string }
