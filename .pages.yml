@@ -3,6 +3,12 @@ media:
   output: /img
 
 content:
+  - name: fun_facts
+    label: facts
+    type: file
+    path: _data/fun_facts.json
+    list: true
+
   - name: products
     label: Products
     type: file
