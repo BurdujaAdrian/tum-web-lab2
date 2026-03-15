@@ -7,21 +7,27 @@ layout: layouts/base.njk
 
 <div style="background-color: rgb(22,83,126); margin: 0 2rem 2rem; padding: 2rem;">
   <div class="products">
+    {% for product in products%}
     <div>
-      <img src="/img/nothingbag.jpg" />
-      <p>A whole lotta nothing</p>
+      <img src="{{product.src}}" />
+      <p> {{product.text}}</p>
     </div>
-    <div>
-      <img src="/img/nothingburger.jpg" />
-      <p>A nothing-burger</p>
-    </div>
-    <div>
-      <img src="/img/box.jpg" />
-      <p>Empty box</p>
-    </div>
-    <div>
-      <img src="/img/pholo.jfif" />
-      <p>Philosofy lessons</p>
-    </div>
+    {% endfor%}
+    <!-- <div> -->
+    <!--   <img src="/img/nothingbag.jpg" /> -->
+    <!--   <p>A whole lotta nothing</p> -->
+    <!-- </div> -->
+    <!-- <div> -->
+    <!--   <img src="/img/nothingburger.jpg" /> -->
+    <!--   <p>A nothing-burger</p> -->
+    <!-- </div> -->
+    <!-- <div> -->
+    <!--   <img src="/img/box.jpg" /> -->
+    <!--   <p>Empty box</p> -->
+    <!-- </div> -->
+    <!-- <div> -->
+    <!--   <img src="/img/pholo.jfif" /> -->
+    <!--   <p>Philosofy lessons</p> -->
+    <!-- </div> -->
   </div>
 </div>
