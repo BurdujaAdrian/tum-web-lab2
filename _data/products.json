@@ -1,6 +1,20 @@
-{"products":[
-  {"src": "nothingbag.jpg", "text": "A whole lotta nothing"}
-  , {"src":"nothingburger.jpg","text":"A nothing-burger"}
-  , {"src":"box.jpg","text":"Empty box"}
-  , {"src":"pholo.jfif","text":"Philosofy lessons"}
-]}
+{
+  "products": [
+    {
+      "src": "nothingbag.jpg",
+      "text": "A whole lotta nothing"
+    },
+    {
+      "src": "nothingburger.jpg",
+      "text": "A nothing-burger"
+    },
+    {
+      "src": "box.jpg",
+      "text": "Empty box"
+    },
+    {
+      "src": "/img/vg6fqvgbqek61.png",
+      "text": "test"
+    }
+  ]
+}
