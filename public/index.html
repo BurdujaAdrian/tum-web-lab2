@@ -1,7 +1,42 @@
----
-layout : layouts/base.njk
----
-<div class="banner" style="margin: 2rem;">
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nothing shop</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="public/css/style.css" />
+  <link rel="icon" href="public/img/N.png" type="image/png" />
+  <!-- color pallete
+    (18,18,18)
+    (46,46,46)
+    (22,83,126)
+    (61,133,198)
+    (69,157,224)
+    (200,200,200)
+  -->
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <img src="public/img/N.png" style="width: 30px; height: 30px; margin-right: 10px;" />
+      <h1>The NOTHING shop</h1>
+      <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/catalog">CATALOGUE</a></li>
+          <li><a href="/aboutme">ABOUT ME</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="banner" style="margin: 2rem;">
   <div class="mascot">
     <img src="public/img/stickman.gif" />
     <div class="tooltip">Buy nothing today!</div>
@@ -50,3 +85,10 @@ layout : layouts/base.njk
     </p>
   </div>
 </div>
+
+  </main>
+
+
+</body>
+
+</html>
