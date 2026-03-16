@@ -16,11 +16,13 @@ layout : layouts/base.njk
 <div style="margin: 0 2rem 2rem; overflow: hidden;">
   <div class="slides">
     {% for product in products.products%}
+    {% if (product.hidden != true) %}
     <div>
       <img src="{{product.src | url}}" />
       <p>{{product.text}}</p>
     </div>
-    {% endfor%}
+    {% endif %}
+    {% endfor %}
   </div>
 </div>
 
