@@ -8,9 +8,11 @@ layout: layouts/base.njk
 <div style="background-color: rgb(22,83,126); margin: 0 2rem 2rem; padding: 2rem;">
   <div class="products">
     {% for product in products.products%}
+    {% if (product.hidden != true)%}
     <div>
     <img src="{{product.src | url}}" />
     <p> {{product.text}}</p>
+    {% endif %}
     </div>
     {% endfor%}
   </div>
