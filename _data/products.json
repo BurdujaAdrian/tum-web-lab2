@@ -2,15 +2,18 @@
   "products": [
     {
       "src": "/img/nothingbag.jpg",
-      "text": "A whole lotta nothing"
+      "text": "A whole lotta nothing",
+      "hidden": false
     },
     {
       "src": "/img/nothingburger.jpg",
-      "text": "A nothing-burger"
+      "text": "A nothing-burger",
+      "hidden": true
     },
     {
       "src": "/img/box.jpg",
-      "text": "Empty box"
+      "text": "Empty box",
+      "hidden": false
     }
   ]
 }
