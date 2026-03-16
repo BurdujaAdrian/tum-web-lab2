@@ -26,4 +26,4 @@ content:
         fields:
           - { name: src, label: Source, type: image }
           - { name: text, label: Text, type: string }
-          - { name: hidden, label: Hidden, type: bool}
+          - { name: hidden, label: Hidden, type: boolean, default: true}
